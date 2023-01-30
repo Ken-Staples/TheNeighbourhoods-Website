@@ -1,0 +1,30 @@
+body {
+    background-image: url('images/calgarytower.png');
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+.main-layout {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: grid;
+    grid-template-rows:
+    auto
+    1 fr 
+    auto;
+}
+
+.primary-header {
+    display: grid;
+    grid-template-areas: "stack";
+    place-items: center;
+}
+
+.primary-header > * {
+    grid-area: stack;
+}
+
+.primary-header__image {
+    width: 100%;
+}
