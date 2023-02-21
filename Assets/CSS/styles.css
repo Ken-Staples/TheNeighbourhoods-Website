@@ -38,7 +38,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #009688;
+    background:#c8102e;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -71,7 +71,7 @@ button{
     margin: 10px 10px;
     border-radius: 20px;
     font-weight: bold;
-    border: 2px solid #009688;
+    border: 2px solid #c8102e;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -79,7 +79,7 @@ button{
     overflow: hidden;
 }
 span{
-    background: #009688;
+    background: #c8102e;
     height: 100%;
     width: 0;
     border-radius: 20px;
