@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THENEIGHBOURHOODS.COM</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet" /> 
 
     <link rel="stylesheet" href="./Assets/CSS/main.css" />
 
@@ -18,13 +18,23 @@
         <div class="container">
             <h2><img src="./Assets/images/logo.png"></h2>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Cities</a>
-                <a href="#">Videos</a>
-                <a href="#">About</a>
+                <a href="home.html">Home</a>
+                <a href="home.html#cities">Cities</a>
+                <a href="home.html#videos">Videos</a>
+                <a href="home.html#about">About</a>
             </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
         </div>
     </header>
+
+    <nav class="mobile-nav">
+        <a href="home.html">Home</a>
+                <a href="home.html#cities">Cities</a>
+                <a href="home.html#videos">Videos</a>
+                <a href="home.html#about">About</a>
+    </nav>
 
     <main>
         <section class="banner">
@@ -38,7 +48,7 @@
             </div>
         </section>
 
-        <section id="cities"class="cities">
+        <section id="cities" class="cities">
             <div class="container">
                 <h2>Cities</h2>
                 <p class="description">Click on your city to see a listing of every neighbourhood there.</p>
@@ -47,17 +57,16 @@
                     
                     <div class="city">
                         <figure class="img-box">
-                            <img src="./Assets/images/calgary.jpg" alt="" class="img" />
+                            <a href="#"><img src="./Assets/images/calgary.jpg" alt="" class="img" /></a>
                         </figure>
-                        <h3>Calgary</h3>
                         <div class="content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam enim consequuntur voluptas molestiae? Doloremque eveniet architecto impedit provident ratione reprehenderit?
+                                Coming Soon. Over 200 neighbourhoods in this dynamic city will be reviewed. 
                             </p>
                         </div>
                     </div>
 
-                    <div class="city">
+                    <!-- <div class="city">
                         <figure class="img-box">
                             <img src="./Assets/images/airdrie.jpg" alt="" class="img" />
                         </figure>
@@ -139,11 +148,11 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam enim consequuntur voluptas molestiae? Doloremque eveniet architecto impedit provident ratione reprehenderit?
                             </p>
                         </div>
-                    </div>
+                    </div> -->
             </div>
         </section>
 
-        <section class="videos">
+        <section id="videos" class="videos">
             <div class="container">
                 <h2>Videos</h2>
                 <p class="description">Click on the video to watch.</p>
@@ -152,18 +161,18 @@
                     <div class="video">
                         <div class="content">
                             <h3>Video #1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea, natus facilis reprehenderit reiciendis odio. Suscipit autem velit necessitatibus vel?</p>
-                            <a href="#" class="button">Learn More</a>
+                            <p>Unlock the Heart of Calgary - One neighbourhood at a time🗝️♥️ . . . #DiscoverYYC #calgaryneighbourhoods #YYC #LocalGuide #alberta #city #citylife </p>
+                            <a href="https://www.tiktok.com/@theneighbourhoods.com/video/7200298333254978822" class="button">Learn More</a>
                         </div>
                     </div>
 
-                    <div class="video">
+                    <!-- <div class="video">
                         <div class="content">
                             <h3>Video #2</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea, natus facilis reprehenderit reiciendis odio. Suscipit autem velit necessitatibus vel?</p>
                             <a href="#" class="button">Learn More</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     </div>
                 </div>
@@ -177,8 +186,8 @@
         <section class="about" id="about">
             <div class="container">
                 <h2>About</h2>
-                <p class="description">Want to help TheNeighbourhoods.com learn more about your neighbourhoods better.<br>
-                    Send a message.</p>
+                <p class="description">Want to help TheNeighbourhoods.com learn more about your neighbourhood.<br>
+                    Send us a message.</p>
                 <form action="">
                     <div class="form-grid">
                         <input type="text" name="name" id="name" placeholder="Name" class="form-element" />

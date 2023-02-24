@@ -25,6 +25,101 @@
 
 }
 
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color:#666c74;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    margin-bottom: 12px 16px;
+    background-color: #787e86;
+
+    color: #FFF;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    background-color:#727981;
+
+}
+
+@media(min-width:768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+section {
+    h2{
+        text-align: center;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #313131;
+        font-size: 36px;
+
+    }
+}
+
+.description {
+    text-align: center; 
+    padding-bottom: 32px;
+}
+
 .button{
     appearance: none;
     border: none;
@@ -49,22 +144,6 @@
 
 img {
     max-width: 100%;
-}
-
-section {
-    h2{
-        text-align: center;
-        margin-bottom: 16px;
-        text-transform: uppercase;
-        color: #313131;
-        font-size: 36px;
-
-    }
-}
-
-.description {
-    text-align: center; 
-    padding-bottom: 32px;
 }
 
 header {
@@ -166,6 +245,16 @@ main {
 
     .cities {
         background-color: #EEE;
+        padding: 16px;
+
+        .h3 {
+            text-align:center;
+            font-weight: 700;
+        }
+
+        .content {
+            padding: 16px;
+        }
 
         .container{
             padding-top: 64px;
@@ -229,12 +318,13 @@ main {
 
             .video{
                 
-                background-image: url('../images/tiktoklarge.jpg');
+                background-image: url('../images/tiktoklarge.png');
+                background-size: auto;
                 border-radius: 16px;
                 overflow:hidden;
 
                 &:nth-child(2) {
-                    background-image: url('../images/youtubelarge.jpg');
+                    background-image: url('../images/youtubelarge.png');
                 }
 
                 .content {
